@@ -1,0 +1,130 @@
+.navbarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: var(--background-color);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s linear;
+}
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+
+}
+
+.navItem {
+  font-size: 16px;
+  margin-left: 20px;
+  cursor: pointer;
+  list-style-type: none;
+  border-radius: 6px;
+  padding-left : 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+}
+.navItem:hover {
+  background-color: rgba(190, 190, 190, 0.3);
+}
+
+.themeToggleButton{
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 1.8rem;
+  margin-left: 500px;
+  outline: none;
+  margin-right: 15px;
+}
+
+.cartButton {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 1.8rem;
+  margin-left: 1.5rem;
+  outline: none;
+}
+
+.input_wrap {
+  width: 400px;
+  height: 46px;
+  border: 1px solid darkblue;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  padding: 13px 22px;
+  font-size: 16px;
+  line-height: 20px;
+  outline: none;
+  color: var(--text-color);
+}
+
+.searchContainer {
+  position: relative;
+}
+
+.searchResults {
+  position: absolute;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 5px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.searchResults::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.searchResultItem {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.searchResultItem:hover {
+  background-color: gray;
+}
+
+.searchResultItem:last-child {
+  border-bottom: none;
+}
+
+.cartItemCount {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

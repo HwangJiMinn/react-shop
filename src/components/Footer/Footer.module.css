@@ -1,0 +1,45 @@
+.container{
+    color: var(--text-color);
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.zero{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.img{
+    width: 300px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.sns{
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.FB{
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.IG{
+    cursor: pointer;
+}
+
+.GH{
+    margin-left: 5px;
+    cursor: pointer;
+}

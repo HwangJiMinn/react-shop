@@ -1,0 +1,89 @@
+.eventBannerContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .slide {
+    display: none;
+    animation: fade 1.5s;
+    position: relative;
+    width: 100%;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .slideImage {
+    width: 100%;
+    height: 700px;
+  }
+  
+  .slideContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .slideDescription {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+  }
+  
+  .prevButton,
+  .nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 50%;
+  }
+  
+  .prevButton {
+    left: 0;
+  }
+  
+  .nextButton {
+    right: 0;
+  }
+  
+  .prevButton:hover,
+  .nextButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .description{
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .slideButton{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #363537;
+    color : darkgray;
+    width: 100px;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+  .slideButton:hover{
+    background-color: #383840;
+  }
+  

@@ -1,0 +1,90 @@
+.productPageContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin: 2rem;
+  align-items: center;
+}
+
+.productImage {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  object-fit: contain;
+  background-color: white;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  grid-column: 1;
+  margin: 0 auto;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+  width: 500px;
+
+}
+
+.productTitle {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.productDescription {
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.rating {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.starIcon {
+  font-size: 20px;
+}
+
+.productPrice {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.addToCartButton,
+.goToCartButton {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+
+.addToCartButton {
+  background-color: #198754;
+  color: white;
+  width: 130px;
+  height: 50px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.addToCartButton:hover{
+  background-color: green;
+}
+
+.goToCartButton {
+  background-color: lightcyan;
+  color: black;
+  width: 130px;
+  height: 50px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.goToCartButton:hover{
+  background-color: lightgoldenrodyellow;
+}

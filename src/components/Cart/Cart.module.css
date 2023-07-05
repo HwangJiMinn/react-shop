@@ -1,0 +1,158 @@
+.cartContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .cartBasket{
+    font-size: 25px;
+    margin-left: 20px;
+  }
+  
+  .cartItems {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cartTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .cartItem {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cartItemImageWrapper {
+    flex: none; 
+    width: 200px;
+    height: 200px; 
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+  }
+  
+  .cartItemImage {
+    width: 80%;
+    height: 80%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cartItemInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    flex-grow: 1;
+  }
+  
+  .cartItemTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .cartItemPrice {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-left: 10px;
+  }
+  
+  .cartItemQuantity {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .cartItemQuantity button {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .totalPrice {
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 10px;
+  }
+  
+  .purchaseButton {
+    background-color: darkorchid;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #999;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modalConfirmButton,
+  .modalCancelButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .modalCancelButton {
+    background-color: red;
+    margin-left: 0.5rem;
+  }
+  
+  .modal h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .modal p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
